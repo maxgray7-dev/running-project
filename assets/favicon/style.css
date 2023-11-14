@@ -77,11 +77,9 @@ nav {
 #nav-toggle:checked~nav {
     display: block;
 }
-
 #nav-toggle {
     display: none;
 }
-
 .nav-toggle-label {
     font-size: 2rem;
 }
@@ -93,8 +91,18 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
-
 /*Footer*/
 footer {
     background-color: orange;
+}
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
 }
