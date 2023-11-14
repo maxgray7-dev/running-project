@@ -90,8 +90,21 @@ main {
     background-color:lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 /*Footer*/
 footer {
     background-color:orange;
 }
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display:block;
+        position: relative; /* We want our nav back inside the header */
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem; /* Our heading won't stick to the age of the screen */
+
+    }
+}
+    
