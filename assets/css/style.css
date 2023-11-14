@@ -104,7 +104,19 @@ footer {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem; /* Our heading won't stick to the age of the screen */
+    }
 
+
+    #menu {
+        display:flex; /* We want nav in a line */
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
     }
 }
     
