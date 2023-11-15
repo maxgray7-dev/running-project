@@ -53,7 +53,7 @@ h1 {
 }
 
 #menu > li {
-    margin-bottom: 1em
+    margin-bottom: 1em;
 }
 
 .active {
@@ -127,14 +127,15 @@ footer {
     /* Main content */
     main {
         /* Push main content down to accomodate large header */
-        margin-top:79px
+        margin-top:79px;
     }
 }
 
 
-    /* large devices (Laptop and desktops, over 992 px and up) */
+/* large devices (Laptop and desktops, over 992 px and up) */
     @media screen and (min-width:992px) {
-       #menu a:hover{
+       
+        #menu a:hover{
         border-bottom: 1px solid #3a3a3a; /* when we hoover over menu options there must appear a line under */
          
         }
