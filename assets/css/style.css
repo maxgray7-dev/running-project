@@ -132,7 +132,7 @@ main {
     text-align: center;
 }
 #benefits-physical > div, #benefits-mental > div {
-        line-height: 20px;
+        line-height: 20px; /* gap before div starts*/
         margin-bottom: 20px;
        }
     #benefits p {
