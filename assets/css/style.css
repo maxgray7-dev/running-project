@@ -93,9 +93,23 @@ main {
     margin-top: 47px;
 }
 /*Footer*/
-footer {
-    background-color:orange;
-}
+
+    #social-networks {
+    text-align: center; /* Align my icons in the center of the footer*/
+    padding: 20px 0; /*add space for icon above and below */
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    }
+
+    #social-networks i {
+
+        font-size: 160%; /*  make icons larger */
+        padding: 5%; /* more space around them */
+        color:#3a3a3a; /*change color of the icons */
+    }
+
+
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
