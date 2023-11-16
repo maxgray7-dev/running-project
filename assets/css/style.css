@@ -87,11 +87,19 @@ nav {
 
 /*Main*/
 main {
-    background-color:lightblue;
+    
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
+/* Hero section*/
+#hero {
+  height: 600px ; /*ensure our pictures shows up*/  
+  width:100% ; /* Takes entire width of the screen*/
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
+  /*using image for background of "main content". Also we want ensure the image won't repeat, and be centered vertically and centered horizontally - cover to entires hero section*/
+}
+
 /*Footer*/
 
     #social-networks {
