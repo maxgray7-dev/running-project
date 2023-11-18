@@ -135,14 +135,33 @@ main {
         line-height: 20px; /* gap before div starts*/
         margin-bottom: 20px;
        }
+     
     #benefits p {
         padding: 0 20px;
     }
 
-    hr {
-        border-top: 1px solid #3a3a3a;
-        margin: 5px 0;
+    #benefits hr {
+            border-top: 1px solid #3a3a3a;
+            margin: 5px 0;
         }
+
+    #circle-cover-bg {
+        background: url("../images/reasons-image.webp") no-repeat top center/cover; /*Cover - means that images coveres entire div*/
+        width: 90vw;
+        height: 90vw;
+        margin-bottom:20px;
+        border-radius: 50%; /* Makes the square image into a circle. Important to have width = height*/
+        max-width: 300px;
+        max-height: 300px; /*ensures that pic will never be more than 300px height*/
+    }
+
+    #benefits-image {
+        /*The image was left for the 768 screens - so we want it centered, we add flex properties*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
 /*Footer*/
 
     #social-networks {
