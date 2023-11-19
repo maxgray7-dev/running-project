@@ -221,7 +221,18 @@ main {
         color:#3a3a3a; /*change color of the icons */
     }
 
+    /* Media query: large or lanscape phones (576px and up)*/
+@media screen and (min-width: 576px) {
+#photos {
+    /* As from name, when screen goes 576px or higher it appears in 2 columns*/
+    column-count: 2;
+    /* There is again came line in between pictures, we need to remove it - so:*/
+    column-gap: 0;
+}
 
+}
+
+/* Media query tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
@@ -282,7 +293,10 @@ main {
             align-self: flex-end;
 
         }
-
+        /* Gallery rules */
+        #photos {
+            column-count: 3;
+        } 
 }
 
 
@@ -293,6 +307,11 @@ main {
         border-bottom: 1px solid #3a3a3a; /* when we hoover over menu options there must appear a line under */
          
         }
+        /* Gallery styles */
+        #photos {
+        column-count: 4;
+        }
+
     }
 /*Large screens 1200px and wider*/
 @media screen and (min-width: 1200px) {
