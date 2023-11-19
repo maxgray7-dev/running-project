@@ -27,7 +27,10 @@
             color: #252525
         }
 
-
+        /*We decided that we want to hide meetup times so we create a section: */
+        .hidden-heading {
+            display:none;
+        }
 
 /*Header*/
 header {
