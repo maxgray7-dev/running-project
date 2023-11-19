@@ -203,6 +203,66 @@ main {
     line-height: 0;
 }
 
+/* Sign-up section,  Main content*/
+main {
+    /*Enlarge main element to push footer down*/
+  flex: 1 0 auto;
+  /*Add margin at the top to prevent content from being covered by the header*/
+   margin-top: 47px;
+   /* Enable flex properties for child elements*/
+   display:flex;
+   flex-direction: column;
+
+}
+    #signup {
+        background: url("../images/signup-image.webp");
+        background-size: cover;
+        background-position: 75%;
+        padding: 20px 10% 0 10%;
+        flex-grow: 1; /*Expands the section*/
+    }
+    #signup-form {
+        color: #ffffff;
+        background-color: rgba(60, 60, 60, .6);
+        padding: 30px;
+    }
+
+    #signup h2 {
+        color: #fafafa;
+        margin-bottom: 20px;
+        
+    }
+    .text-input {
+        background: transparent;
+        color: #fafafa;
+        width: 100%;
+        height: 25%;
+        margin: 5px 0 20px 0;
+        border: 1px solid #fafafa;
+        border-radius: 2px;
+        padding: 0 5px;   
+        
+    }
+
+    .radio-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .join-button {
+        border-radius: 2px;
+        background-color: #454b1b;
+        color:#fafafa;
+        font-size: 100%;
+        padding: 15px 32px;
+        margin-top: 20px;
+    }
+
+
+
+
     
 /*Footer*/
 
@@ -297,6 +357,30 @@ main {
         #photos {
             column-count: 3;
         } 
+        /*Signup form*/
+        #signup {
+            /*make position relative,so absolute position can be used on the form*/
+    background-position: center;
+    position: relative;
+        }
+
+        #signup-form {
+            position: absolute;
+            top: 150px;
+            max-width: 400px;
+            left: 10%;
+
+        }
+
+        .text-input:hover {
+            border-color: #f16c6b;
+        }
+        .join-button:hover {
+            background-color: #fafafa;
+            color: #454b1b;
+        }
+
+
 }
 
 
