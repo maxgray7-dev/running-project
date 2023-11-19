@@ -219,7 +219,27 @@ main {
         width: 300px;
         right: 50px
     }
+    /* Reasons section */
 
+        #benefits-physical,
+        #benefits-mental {
+            /* First we need to make sure our 2 benefits sections have Flex set as a display value - if we want to reaarange it*/
+            Display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        #benefits-physical>div,
+        #benefits-mental>div {
+    /* Second we set width 75%*/
+            width: 75%
+        }
+        #benefits-mental > div {
+            /* Finally we align the text to the right with end, and align the divs themselves to the right with align-self set to flex-end */
+            text-align: end;
+            align-self: flex-end;
+
+        }
 
 }
 
@@ -232,3 +252,35 @@ main {
          
         }
     }
+/*Large screens 1200px and wider*/
+@media screen and (min-width: 1200px) {
+
+#benefits {
+    display: flex;
+    flex-direction: row;
+}
+    
+    #benefits > div {
+        /* All divs use the same surplus*/
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+    /* Align text  to the right from the picture*/
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+        /* Align text  to the left from the picture*/
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+
+
+}
