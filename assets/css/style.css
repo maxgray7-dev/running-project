@@ -191,7 +191,17 @@ main {
     color: #fafafa;
 
     }
-
+/* Gallery page - next rule for any images in a photos div*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    /* we want to remove boarder in between pics,
+    By default, the images here are inline elements, which are treated like text. Text has an automatic line height to vertically space out the lines,
+    which is causing this white space. So to fix that , we will set a line height on the photos div to 0*/
+    line-height: 0;
+}
 
     
 /*Footer*/
